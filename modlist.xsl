@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:functx="http://www.functx.com"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     version="1.0">
 
+  <xsl:strip-space elements="*"/>
   <xsl:output method="text" />
+
+  <xsl:template match="*">
+    <xsl:apply-templates select="mods"/>
+  </xsl:template>
 
   <xsl:template match="/version/mods">
     <xsl:text>| Mod | Version | Description |&#xa;</xsl:text>
@@ -23,6 +27,6 @@
     <xsl:text> | </xsl:text>
     <xsl:value-of select="@description" />
     <xsl:text> |&#xa;</xsl:text>
-</xsl:template>
+  </xsl:template>
 
 </xsl:stylesheet>
