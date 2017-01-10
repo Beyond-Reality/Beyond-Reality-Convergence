@@ -4,7 +4,7 @@ ATLauncher XML to Markdown modlist converter
 Author: Léa Gris
 Date: 2017-01-08
 Version: 0.1.0
-Licence: http://www.wtfpl.net/
+License: http://www.wtfpl.net/
 
 Example usage:
   xsltproc modlist.xsl ATLauncherModpack.xml > modlist.md
