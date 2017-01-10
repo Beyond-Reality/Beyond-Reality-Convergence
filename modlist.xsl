@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+ATLauncher XML to Markdown modlist converter
+Author: Léa Gris
+Date: 2017-01-08
+Version: 0.1.0
+Licence: http://www.wtfpl.net/
+
+Example usage:
+  xsltproc modlist.xsl ATLauncherModpack.xml > modlist.md
+-->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:functx="http://www.functx.com"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
